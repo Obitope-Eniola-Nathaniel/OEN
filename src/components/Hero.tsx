@@ -84,7 +84,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-4 sm:mb-6"
             >
               <Button
                 asChild
@@ -104,6 +104,17 @@ export function Hero() {
               >
                 Let's Work Together
               </Button>
+            </motion.div>
+
+            {/* About quick blurb */}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.4 }}
+              className={`text-sm sm:text-base ${theme === "dark" ? "text-gray-400" : "text-gray-600"} mb-6 sm:mb-8`}
+            >
+              I craft user-focused interfaces and resilient APIs. Curious about my background?
+              <a href="#about" className={`ml-2 underline decoration-cyan-500/60 underline-offset-4 hover:text-cyan-400`}>About me</a>.
             </motion.div>
 
             {/* Social Links */}
@@ -168,9 +179,11 @@ export function Hero() {
               {/* Profile Image */}
               <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-cyan-500/30 shadow-2xl shadow-cyan-500/20">
                 <ImageWithFallback
-                  src="https://drive.google.com/uc?export=view&id=1h79p8iU2oztCXtI5RiF0W0Ks0Kdr3b_c"
+                  src="/image/PTP09911.jpg"
                   alt="Obitope Eniola"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[50%_20%]"
+                  sizes="(max-width: 640px) 14rem, (max-width: 1024px) 18rem, 24rem"
+                  loading="eager"
                 />
               </div>
 

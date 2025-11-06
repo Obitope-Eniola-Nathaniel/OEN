@@ -117,14 +117,17 @@ export function About() {
           >
             <div className={`relative rounded-2xl overflow-hidden shadow-2xl ${
               theme === "dark" ? "border border-cyan-500/20" : "border-2 border-cyan-500/30"
-            }`}>
+            } aspect-[4/5] sm:aspect-[4/5] lg:aspect-square w-full max-w-xl mx-auto`}>
               <div className={`absolute inset-0 ${
                 theme === "dark" ? "bg-gradient-to-br from-cyan-500/10 to-blue-500/10" : "bg-gradient-to-br from-cyan-500/5 to-blue-500/5"
               }`} />
               <img
-                src="https://drive.google.com/uc?export=view&id=1h79p8iU2oztCXtI5RiF0W0Ks0Kdr3b_c"
+                src="/image/PTP09857.jpg"
                 alt="Obitope Eniola"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover object-[50%_20%]"
+                loading="lazy"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 480px"
+                decoding="async"
               />
             </div>
           </motion.div>
