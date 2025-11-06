@@ -1,15 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web Portfolio Design</title>
+    <meta
+      name="description"
+      content="Personal portfolio showcasing projects, skills, experience, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web developer, frontend, react, typescript, projects"
+    />
+    <meta name="author" content="Obitope Eniola Nathaniel" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0ea5e9" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Personal Web Portfolio Design</title>
-    </head>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://oen-uf1v.vercel.app/" />
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Open Graph -->
+    <meta property="og:title" content="Personal Web Portfolio Design" />
+    <meta
+      property="og:description"
+      content="Explore my projects, experience, and skills."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oen-uf1v.vercel.app/" />
+    <meta property="og:image" content="/image/PTP09911.jpg" />
+    <meta
+      property="og:image:alt"
+      content="Portfolio preview of Obitope Eniola Nathaniel"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Personal Web Portfolio Design" />
+    <meta
+      name="twitter:description"
+      content="Explore my projects, experience, and skills."
+    />
+    <meta name="twitter:image" content="/image/PTP09911.jpg" />
+
+    <!-- Favicon (optional: add files in public/) -->
+    <link rel="icon" type="image/jpeg" href="/image/PTP09911.jpg" />
+
+    <!-- JSON-LD Structured Data (Person) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Obitope Eniola Nathaniel",
+        "url": "https://oen-uf1v.vercel.app/",
+        "sameAs": [
+          "https://github.com/Obitope-Eniola-Nathaniel",
+          "https://www.linkedin.com/in/obitope-eniola/"
+        ],
+        "jobTitle": "Full-Stack Software Engineer",
+        "image": "https://oen-uf1v.vercel.app/image/PTP09911.jpg",
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "CSS",
+          "UI",
+          "Node.js",
+          "Express.js",
+          "Django",
+          "FastAPI"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

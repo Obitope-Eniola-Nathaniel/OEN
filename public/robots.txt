@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Production domain
+Sitemap: https://oen-uf1v.vercel.app/sitemap.xml
+
+
