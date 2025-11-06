@@ -11,7 +11,7 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Animated background gradient */}
       <div className={`absolute inset-0 ${
         theme === "dark"
@@ -181,7 +181,7 @@ export function Hero() {
                 <ImageWithFallback
                   src="/image/PTP09911.jpg"
                   alt="Obitope Eniola"
-                  className="w-full h-full object-cover object-[50%_20%]"
+                  className="w-full h-full object-cover object-center lg:object-[50%_20%]"
                   sizes="(max-width: 640px) 14rem, (max-width: 1024px) 18rem, 24rem"
                   loading="eager"
                 />
