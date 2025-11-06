@@ -2,11 +2,8 @@ node_modules
 /build
 /dist
 /node_modules
-/public
-/src
-/vite.config.ts
-/package.json
-/package-lock.json
+
+
 /README.md
 /LICENSE
 /CONTRIBUTING.md
