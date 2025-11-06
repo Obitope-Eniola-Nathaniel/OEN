@@ -8,8 +8,8 @@ export function FloatingWhatsApp() {
   const { theme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   
-  // Replace with actual WhatsApp number (remove spaces and add country code)
-  const phoneNumber = "2348123456789"; // Example: Nigeria number
+  // WhatsApp number (no +, no spaces)
+  const phoneNumber = "2349059692851";
   const message = "Hi Obitope! I'd like to discuss a project with you.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -30,11 +30,13 @@ export function FloatingWhatsApp() {
           {/* Header */}
           <div className="bg-gradient-to-r from-green-500 to-green-600 p-3 sm:p-4 flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1h79p8iU2oztCXtI5RiF0W0Ks0Kdr3b_c"
+                  src="/image/PTP09911.jpg"
                   alt="Obitope"
-                  className="w-full h-full rounded-full object-cover"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="min-w-0">
