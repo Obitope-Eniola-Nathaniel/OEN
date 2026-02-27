@@ -1,5 +1,12 @@
 import { Button } from "./ui/button";
-import { Github, Linkedin, Twitter, Mail, Download, ArrowDown } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Mail,
+  Download,
+  ArrowDown,
+} from "lucide-react";
 import { motion } from "motion/react";
 import { useTheme } from "./ThemeProvider";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -7,29 +14,38 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function Hero() {
   const { theme } = useTheme();
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
+    >
       {/* Animated background gradient */}
-      <div className={`absolute inset-0 ${
-        theme === "dark"
-          ? "bg-gradient-to-br from-cyan-500/10 via-gray-950 to-blue-500/10"
-          : "bg-gradient-to-br from-cyan-500/20 via-gray-50 to-blue-500/20"
-      }`} />
-      <div className={`absolute inset-0 ${
-        theme === "dark"
-          ? "bg-[radial-gradient(circle_at_50%_50%,rgba(0,188,212,0.1),transparent_50%)]"
-          : "bg-[radial-gradient(circle_at_50%_50%,rgba(0,188,212,0.15),transparent_50%)]"
-      }`} />
-      
+      <div
+        className={`absolute inset-0 ${
+          theme === "dark"
+            ? "bg-gradient-to-br from-cyan-500/10 via-gray-950 to-blue-500/10"
+            : "bg-gradient-to-br from-cyan-500/20 via-gray-50 to-blue-500/20"
+        }`}
+      />
+      <div
+        className={`absolute inset-0 ${
+          theme === "dark"
+            ? "bg-[radial-gradient(circle_at_50%_50%,rgba(0,188,212,0.1),transparent_50%)]"
+            : "bg-[radial-gradient(circle_at_50%_50%,rgba(0,188,212,0.15),transparent_50%)]"
+        }`}
+      />
+
       {/* Grid pattern overlay */}
-      <div className={`absolute inset-0 ${
-        theme === "dark"
-          ? "bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)]"
-          : "bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)]"
-      } bg-[size:24px_24px]`} />
+      <div
+        className={`absolute inset-0 ${
+          theme === "dark"
+            ? "bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)]"
+            : "bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)]"
+        } bg-[size:24px_24px]`}
+      />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 md:py-0">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
@@ -46,7 +62,9 @@ export function Hero() {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full mb-4 sm:mb-6"
             >
-              <span className="text-cyan-400 text-sm sm:text-base">👋 Welcome to my portfolio</span>
+              <span className="text-cyan-400 text-sm sm:text-base">
+                👋 Welcome to my portfolio
+              </span>
             </motion.div>
 
             <motion.h1
@@ -55,7 +73,11 @@ export function Hero() {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="mb-4"
             >
-              <span className={theme === "dark" ? "text-gray-300" : "text-gray-700"}>I'm</span>{" "}
+              <span
+                className={theme === "dark" ? "text-gray-300" : "text-gray-700"}
+              >
+                I'm
+              </span>{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Obitope (Nathaniel) Eniola
               </span>
@@ -65,7 +87,11 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className={theme === "dark" ? "text-gray-400 mb-4 sm:mb-6" : "text-gray-600 mb-4 sm:mb-6"}
+              className={
+                theme === "dark"
+                  ? "text-gray-400 mb-4 sm:mb-6"
+                  : "text-gray-600 mb-4 sm:mb-6"
+              }
             >
               Full-Stack Software Engineer
             </motion.h2>
@@ -76,7 +102,8 @@ export function Hero() {
               transition={{ delay: 0.5, duration: 0.5 }}
               className={`mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}
             >
-              Building scalable web applications and APIs with clean code and creative design.
+              Building scalable web applications and APIs with clean code and
+              creative design.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -91,7 +118,11 @@ export function Hero() {
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white rounded-full px-6 sm:px-8 w-full sm:w-auto"
               >
-                <a href="https://drive.google.com/uc?export=download&id=1chnUDQrBGllmaEizYw3DYqkjmv12g_EF" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1chnUDQrBGllmaEizYw3DYqkjmv12g_EF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   Download CV
                 </a>
@@ -113,8 +144,15 @@ export function Hero() {
               transition={{ delay: 0.7, duration: 0.4 }}
               className={`text-sm sm:text-base ${theme === "dark" ? "text-gray-400" : "text-gray-600"} mb-6 sm:mb-8`}
             >
-              I craft user-focused interfaces and resilient APIs. Curious about my background?
-              <a href="#about" className={`ml-2 underline decoration-cyan-500/60 underline-offset-4 hover:text-cyan-400`}>About me</a>.
+              I craft user-focused interfaces and resilient APIs. Curious about
+              my background?
+              <a
+                href="#about"
+                className={`ml-2 underline decoration-cyan-500/60 underline-offset-4 hover:text-cyan-400`}
+              >
+                About me
+              </a>
+              .
             </motion.div>
 
             {/* Social Links */}
@@ -125,42 +163,58 @@ export function Hero() {
               className="flex gap-4 justify-center lg:justify-start"
             >
               <a
-                href="https://github.com/obitopeeniola"
+                href="https://github.com/Obitope-Eniola-Nathaniel"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-12 h-12 rounded-full border hover:border-cyan-500 hover:bg-cyan-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 ${
-                  theme === "dark" ? "bg-gray-800/50 border-gray-700" : "bg-white border-gray-300"
+                  theme === "dark"
+                    ? "bg-gray-800/50 border-gray-700"
+                    : "bg-white border-gray-300"
                 }`}
               >
-                <Github className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`} />
+                <Github
+                  className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}
+                />
               </a>
               <a
-                href="https://linkedin.com/in/obitopeeniola"
+                href="http://linkedin.com/in/obitope-eniola/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-12 h-12 rounded-full border hover:border-cyan-500 hover:bg-cyan-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 ${
-                  theme === "dark" ? "bg-gray-800/50 border-gray-700" : "bg-white border-gray-300"
+                  theme === "dark"
+                    ? "bg-gray-800/50 border-gray-700"
+                    : "bg-white border-gray-300"
                 }`}
               >
-                <Linkedin className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`} />
+                <Linkedin
+                  className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}
+                />
               </a>
               <a
-                href="https://twitter.com/obitopeeniola"
+                href="https://x.com/ObitopeE"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-12 h-12 rounded-full border hover:border-cyan-500 hover:bg-cyan-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 ${
-                  theme === "dark" ? "bg-gray-800/50 border-gray-700" : "bg-white border-gray-300"
+                  theme === "dark"
+                    ? "bg-gray-800/50 border-gray-700"
+                    : "bg-white border-gray-300"
                 }`}
               >
-                <Twitter className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`} />
+                <Twitter
+                  className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}
+                />
               </a>
               <a
                 href="mailto:obitopeeniola@gmail.com"
                 className={`w-12 h-12 rounded-full border hover:border-cyan-500 hover:bg-cyan-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 ${
-                  theme === "dark" ? "bg-gray-800/50 border-gray-700" : "bg-white border-gray-300"
+                  theme === "dark"
+                    ? "bg-gray-800/50 border-gray-700"
+                    : "bg-white border-gray-300"
                 }`}
               >
-                <Mail className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`} />
+                <Mail
+                  className={`h-5 w-5 hover:text-cyan-400 transition-colors ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}
+                />
               </a>
             </motion.div>
           </motion.div>
@@ -175,7 +229,7 @@ export function Hero() {
             <div className="relative">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full blur-3xl opacity-20 animate-pulse" />
-              
+
               {/* Profile Image */}
               <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-cyan-500/30 shadow-2xl shadow-cyan-500/20">
                 <ImageWithFallback
@@ -190,7 +244,11 @@ export function Hero() {
               {/* Floating elements */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center shadow-lg text-xl sm:text-2xl"
               >
                 <span>💻</span>
@@ -198,7 +256,12 @@ export function Hero() {
 
               <motion.div
                 animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
                 className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center shadow-lg text-xl sm:text-2xl"
               >
                 <span>🚀</span>
