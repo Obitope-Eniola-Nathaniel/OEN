@@ -12,7 +12,7 @@ import {
   Send,
 } from "lucide-react";
 import { useState } from "react";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { useTheme } from "./ThemeProvider";
 
 export function Contact() {
@@ -55,19 +55,19 @@ export function Contact() {
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com/obitopeeniola",
+      url: "https://github.com/Obitope-Eniola-Nathaniel",
       color: "hover:text-gray-400",
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/obitopeeniola",
+      url: "https://www.linkedin.com/in/obitope-eniola/",
       color: "hover:text-blue-400",
     },
     {
       icon: Twitter,
       name: "Twitter",
-      url: "https://twitter.com/obitopeeniola",
+      url: "https://x.com/ObitopeE",
       color: "hover:text-cyan-400",
     },
   ];
@@ -245,7 +245,7 @@ export function Contact() {
                   <Input
                     id="name"
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Enter your name"
                     value={formData.name}
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
@@ -271,7 +271,7 @@ export function Contact() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="you@example.com"
                     value={formData.email}
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
@@ -296,7 +296,7 @@ export function Contact() {
                   </label>
                   <Textarea
                     id="message"
-                    placeholder="Tell me about your project..."
+                    placeholder="How can I help? Share your project or question..."
                     value={formData.message}
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })

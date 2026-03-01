@@ -9,28 +9,54 @@ export function Projects() {
   const { theme } = useTheme();
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with payment integration, inventory management, and real-time order tracking. Built with React, Node.js, and PostgreSQL.",
-      image: "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYyMDg3OTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/obitopeeniola"
+      title: "Meride Haven",
+      description: "Transport and hospitality platform offering trusted drivers and car hire (HavenRide), handpicked accommodations (HavenStay), event support (HavenEvents), and professional security escort services (HavenSecure). Move with ease, arrive with confidence.",
+      image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
+      tech: ["Express.js", "MongoDB", "Node.js", "REST API"],
+      liveUrl: "https://meride-haven.com/",
+      githubUrl: "https://github.com/Obitope-Eniola-Nathaniel"
     },
     {
-      title: "Task Management API",
-      description: "RESTful API for project and task management with team collaboration features. Implements JWT authentication and role-based access control.",
-      image: "https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYyMDc3MjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tech: ["Django", "FastAPI", "MongoDB", "Redis"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/obitopeeniola"
+      title: "Worknoon",
+      description: "Full-stack platform for finding coworking spaces, private offices, and meeting rooms. Connects professionals with the perfect workspace — built for seamless booking and workspace discovery.",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+      tech: ["React", "TypeScript", "Express.js", "MongoDB"],
+      liveUrl: "https://worknoon.com/",
+      githubUrl: "https://github.com/Obitope-Eniola-Nathaniel"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Interactive data visualization dashboard with real-time updates and customizable widgets. Features advanced filtering and export capabilities.",
-      image: "https://images.unsplash.com/photo-1758411898471-fa144c487c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBhcHB8ZW58MXx8fHwxNzYyMTYwNjI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tech: ["React", "TypeScript", "Recharts", "Tailwind"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/obitopeeniola"
+      title: "We Listen",
+      description: "Backend services and API powering the We Listen platform. Built for reliability and scale with Express.js and MongoDB, delivering robust APIs and data handling.",
+      image: "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=800&q=80",
+      tech: ["Express.js", "MongoDB", "Node.js", "REST API"],
+      liveUrl: "https://we-listen.co/",
+      githubUrl: "https://github.com/Obitope-Eniola-Nathaniel"
+    },
+    {
+      title: "SOS Diesel Biller",
+      description: "Generator and diesel billing platform with multi-tenant support. Manages shops, tenants, and billing for diesel/generator services — admin and site user roles with MySQL-backed data.",
+      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+      tech: ["Django", "MySQL", "Python", "Multi-tenant"],
+      liveUrl: "https://sosdieselbilller.com.ng/",
+      githubUrl: "https://github.com/Obitope-Eniola-Nathaniel"
+    },
+    {
+      title: "VerifyDeliver",
+      description: "B2B/B2C verification management platform — independent third-party product inspection and verification for online trade. Product & address verification, structured reports, multi-portal (client, verifier, admin), real-time task tracking, and geo-tagged media evidence. Built for trust and transparency in online trade.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+      tech: ["NestJS", "PostgreSQL", "Prisma", "Redis", "TypeScript"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Obitope-Eniola-Nathaniel",
+      ongoing: true
+    },
+    {
+      title: "Wallet / Banking API",
+      description: "Wallet and banking system API with wallet CRUD, deposits, withdrawals, and atomic transfers between wallets. Built with Clean Architecture and CQRS (MediatR): transaction logging, concurrency control, and phased roadmap to multi-database support, Redis caching, and event-driven design. Learning platform for enterprise-grade backend patterns.",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
+      tech: ["ASP.NET Core", "CQRS", "MediatR", "PostgreSQL", "Clean Architecture"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Obitope-Eniola-Nathaniel",
+      ongoing: true
     }
   ];
 
@@ -85,11 +111,18 @@ export function Projects() {
 
               {/* Project Content */}
               <div className="p-4 sm:p-6">
-                <h3 className={`mb-2 sm:mb-3 text-sm sm:text-base group-hover:text-cyan-400 transition-colors duration-300 ${
-                  theme === "dark" ? "text-white" : "text-gray-900"
-                }`}>
-                  {project.title}
-                </h3>
+                <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
+                  <h3 className={`text-sm sm:text-base group-hover:text-cyan-400 transition-colors duration-300 ${
+                    theme === "dark" ? "text-white" : "text-gray-900"
+                  }`}>
+                    {project.title}
+                  </h3>
+                  {(project as { ongoing?: boolean }).ongoing && (
+                    <Badge className="bg-amber-500/20 text-amber-400 border-amber-500/40 text-xs">
+                      In progress
+                    </Badge>
+                  )}
+                </div>
                 <p className={`text-xs sm:text-sm mb-3 sm:mb-4 ${theme === "dark" ? "text-gray-400" : "text-gray-700"}`}>
                   {project.description}
                 </p>
@@ -113,17 +146,29 @@ export function Projects() {
 
                 {/* Actions */}
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-                  <Button
-                    asChild
-                    variant="default"
-                    size="sm"
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white flex-1 text-xs sm:text-sm"
-                  >
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  {(project as { ongoing?: boolean }).ongoing ? (
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="flex-1 text-xs sm:text-sm cursor-default opacity-80"
+                      disabled
+                    >
                       <ExternalLink className="mr-1.5 sm:mr-2 h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                      View Live
-                    </a>
-                  </Button>
+                      Coming soon
+                    </Button>
+                  ) : (
+                    <Button
+                      asChild
+                      variant="default"
+                      size="sm"
+                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white flex-1 text-xs sm:text-sm"
+                    >
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-1.5 sm:mr-2 h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                        View Live
+                      </a>
+                    </Button>
+                  )}
                   <Button
                     asChild
                     variant="outline"

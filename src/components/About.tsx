@@ -31,26 +31,41 @@ export function About() {
       title: "Frontend",
       icon: Code,
       color: "from-cyan-500 to-blue-500",
-      skills: ["React.js", "JavaScript", "HTML", "CSS", "Tailwind"]
+      skills: [
+        "React.js",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "TypeScript",
+        "Next.js",
+      ],
     },
     {
       title: "Backend",
       icon: Server,
       color: "from-blue-500 to-purple-500",
-      skills: ["Node.js", "Express.js", "Django", "FastAPI"]
+      skills: [
+        "Node.js",
+        "Express.js",
+        "Django",
+        "FastAPI",
+        "NestJS",
+        ".NET Core",
+      ],
     },
     {
       title: "Database",
       icon: Database,
       color: "from-purple-500 to-pink-500",
-      skills: ["PostgreSQL", "MongoDB", "MySQL"]
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "GraphQL"],
     },
     {
       title: "Tools",
       icon: Wrench,
       color: "from-pink-500 to-red-500",
-      skills: ["Git", "CI/CD", "Agile", "Figma"]
-    }
+      skills: ["Git", "CI/CD", "Agile", "Figma"],
+    },
   ];
 
   const certifications = [
@@ -62,10 +77,17 @@ export function About() {
       logo: "🎓"
     },
     {
+      title: "Full Stack Web Development (Front End)",
+      issuer: "New Horizon",
+      date: "2024",
+      verifyUrl: "/certificates/new-horizon-fullstack-frontend-2024.pdf",
+      logo: "🌐"
+    },
+    {
       title: "Responsive Web Design",
       issuer: "freeCodeCamp",
       date: "2024",
-      verifyUrl: "https://www.freecodecamp.org/certification/",
+      verifyUrl: "https://www.freecodecamp.org/certification/nieltech/responsive-web-design",
       logo: "💻"
     },
     {
@@ -81,6 +103,48 @@ export function About() {
       date: "2024",
       verifyUrl: "https://www.freecodecamp.org/certification/",
       logo: "⚙️"
+    },
+    {
+      title: "Introduction to Cybersecurity Tools & Cyberattacks",
+      issuer: "IBM",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-cybersecurity-cyber-attacks",
+      logo: "🔒"
+    },
+    {
+      title: "Crash Course on Python",
+      issuer: "Google",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/python-crash-course",
+      logo: "🐍"
+    },
+    {
+      title: "Using Python to Interact with the Operating System",
+      issuer: "Google",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/python-operating-system",
+      logo: "🖥️"
+    },
+    {
+      title: "Introduction to Git and GitHub",
+      issuer: "Google",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-git-github",
+      logo: "📦"
+    },
+    {
+      title: "Introduction to Web Development with HTML, CSS, JavaScript",
+      issuer: "IBM",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-to-web-development-with-html-css-javacript",
+      logo: "🌐"
+    },
+    {
+      title: "Introduction to Cloud Computing",
+      issuer: "IBM",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-to-cloud",
+      logo: "☁️"
     }
   ];
 

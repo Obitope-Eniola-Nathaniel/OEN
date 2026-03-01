@@ -13,9 +13,9 @@ export function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/obitopeeniola", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/obitopeeniola", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/obitopeeniola", label: "Twitter" }
+    { icon: Github, href: "https://github.com/Obitope-Eniola-Nathaniel", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/obitope-eniola/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/ObitopeE", label: "X (Twitter)" }
   ];
 
   const scrollToTop = () => {
@@ -119,7 +119,7 @@ export function Footer() {
             <p className={`text-center sm:text-left flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-sm ${
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}>
-              <span>© 2025 Obitope Eniola.</span>
+              <span>© 2026 Obitope Eniola.</span>
               <span className="flex items-center gap-1.5">
                 Made with
                 <Heart className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-red-500 fill-red-500" />

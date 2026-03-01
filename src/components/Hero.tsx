@@ -119,12 +119,12 @@ export function Hero() {
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white rounded-full px-6 sm:px-8 w-full sm:w-auto"
               >
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1chnUDQrBGllmaEizYw3DYqkjmv12g_EF"
+                  href="/oen-cv.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  Download CV
+                  View / Download CV
                 </a>
               </Button>
               <Button
@@ -177,7 +177,7 @@ export function Hero() {
                 />
               </a>
               <a
-                href="http://linkedin.com/in/obitope-eniola/"
+                href="https://www.linkedin.com/in/obitope-eniola/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-12 h-12 rounded-full border hover:border-cyan-500 hover:bg-cyan-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 ${

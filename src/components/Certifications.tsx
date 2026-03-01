@@ -14,10 +14,17 @@ export function Certifications() {
       logo: "🎓"
     },
     {
+      title: "Full Stack Web Development (Front End)",
+      issuer: "New Horizon",
+      date: "2024",
+      verifyUrl: "/certificates/new-horizon-fullstack-frontend-2024.pdf",
+      logo: "🌐"
+    },
+    {
       title: "Responsive Web Design",
       issuer: "freeCodeCamp",
       date: "2024",
-      verifyUrl: "https://www.freecodecamp.org/certification/",
+      verifyUrl: "https://www.freecodecamp.org/certification/nieltech/responsive-web-design",
       logo: "💻"
     },
     {
@@ -33,6 +40,48 @@ export function Certifications() {
       date: "2024",
       verifyUrl: "https://www.freecodecamp.org/certification/",
       logo: "⚙️"
+    },
+    {
+      title: "Introduction to Cybersecurity Tools & Cyberattacks",
+      issuer: "IBM",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-cybersecurity-cyber-attacks",
+      logo: "🔒"
+    },
+    {
+      title: "Crash Course on Python",
+      issuer: "Google",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/python-crash-course",
+      logo: "🐍"
+    },
+    {
+      title: "Using Python to Interact with the Operating System",
+      issuer: "Google",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/python-operating-system",
+      logo: "🖥️"
+    },
+    {
+      title: "Introduction to Git and GitHub",
+      issuer: "Google",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-git-github",
+      logo: "📦"
+    },
+    {
+      title: "Introduction to Web Development with HTML, CSS, JavaScript",
+      issuer: "IBM",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-to-web-development-with-html-css-javacript",
+      logo: "🌐"
+    },
+    {
+      title: "Introduction to Cloud Computing",
+      issuer: "IBM",
+      date: "—",
+      verifyUrl: "https://www.coursera.org/learn/introduction-to-cloud",
+      logo: "☁️"
     }
   ];
 
